@@ -1,3 +1,8 @@
+import 'dart:ffi';
+import 'dart:io';
+
+import 'package:test/test.dart';
+
 void main() {
   int a = 10;
   int b = 3;
@@ -47,10 +52,62 @@ void main() {
   // Relational operator
 
   int s = 50;
-  print(" s > 50  = ${s> 20}" );
-  print(" s > 50  = ${s< 40}" );
-  print(" s > 50  = ${s== 60}" );
-  print(" s > 50  = ${s<= 90}" );
-  print(" s > 50  = ${s>= 30}" );
-  
+  print(" s > 50  = ${s > 20}");
+  print(" s > 50  = ${s < 40}");
+  print(" s > 50  = ${s == 60}");
+  print(" s > 50  = ${s <= 90}");
+  print(" s > 50  = ${s >= 30}");
+
+  /// Logical operator  && // !(expression)
+
+  String username = "Joseph";
+  String password = "josf@6141";
+  int otp = 65842;
+  print(username == "Joseph" && password == "josf@6141" && otp == 65842);
+  print(username == "Joseph" && password == "josf@6141" || otp == 658);
+  print(!(otp == 65842));
+
+  //bitwise operator
+
+  int l = 10; // 1010
+  int j = 3; //0010
+
+  /// i & j   =  0010  = 2
+  /// i & j   =  1011  = 11
+  /// i  ^  j  = 1001  = 9
+
+  print(i & j);
+  print(i | j);
+  print(i ^ j);
+
+  //conditionl operator
+
+  // int age = 32;
+  // dynamic result = (age >= 18) ? "Welcome to vote" : false;
+  // print(result);
+
+//else if ladder
+
+//   String size = "L";
+
+//   if (size == "S") {
+//     print("Your size S is available");
+//   } else if (size == "M") {
+//     print("Your size M is availbale ");
+//   } else if (size == "L") {
+//     print("Your size L is available");
+//   } else if (size == "XL") {
+//     print("Your size XL is available");
+//   } else if (size == "XXL") {
+//     print("Your size XXL is available");
+//   } else {
+//     print("Your is not available");
+//   }
+// }
+
+
+//Switch case
+
+
+
 }
